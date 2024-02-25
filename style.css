@@ -1,0 +1,112 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to bottom, #9B72AA, #5E437C); /* Purple gradient background */
+    color: #333;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+.title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.upload-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.upload-button {
+    background-color: #7D5BA6; /* Purple shade */
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#file-chosen {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #6A4C93; /* Purple shade */
+    color: #fff;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.submit-button:hover {
+    background-color: #5E437C; /* Darker purple for hover effect */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    display: none;
+}
+
+.how-it-works {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.how-it-works h2 {
+    color: #7D5BA6; /* Purple shade */
+    margin-bottom: 15px;
+}
+
+.how-it-works p, .how-it-works ul li strong {
+    color: #666;
+    line-height: 1.6;
+}
+
+.how-it-works ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.how-it-works ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.how-it-works ul li::before {
+    content: "•";
+    color: #7D5BA6; /* Purple shade */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+}

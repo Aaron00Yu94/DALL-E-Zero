@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DALL-E Zero</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <p>This AI Image Verifier utilizes advanced machine learning algorithms to analyze your uploaded image. Here's a brief overview of the process:</p>
+            <ul>
+                <li><strong>Upload Your Image:</strong> Select and upload a JPG image you wish to verify.</li>
+                <li><strong>Analysis:</strong> Our AI analyzes the image, checking for signs that indicate whether it's AI-generated or authentic.</li>
+                <li><strong>Results:</strong> In moments, you'll receive feedback on the image's authenticity.</li>
+            </ul>
+        </div>
+        
+
+        <div class="content">
+            <h1 class="title">DALL-E Zero AI Image Verifier</h1>
+            <p class="description">Upload your image and let AI determine its authenticity. Powered by cutting-edge technology.</p>
+            <div class="upload-box">
+                <input type="file" id="imageUpload" accept="image/jpeg" hidden>
+                <label for="imageUpload" class="upload-button"><i class="fas fa-cloud-upload-alt"></i> Choose Image</label>
+                <span id="file-chosen">No file chosen</span>
+            </div>
+            <button class="submit-button" onclick="uploadImage()">Verify Image</button>
+            <div id="result" class="result"></div>
+        </div>
+    </div>
+    <script src="./image_upload.jsx"/>
+    <script src="script.js"></script>
+</body> 
+</html>
